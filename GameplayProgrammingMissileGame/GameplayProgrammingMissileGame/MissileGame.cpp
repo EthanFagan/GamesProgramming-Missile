@@ -1,7 +1,7 @@
 // Author Ethan Fagan
 // Date started: 20/09/2018
 //-------------------------------------------------------------
-// 
+// A missile game where the player selects a warhead type and attempts to hit
 //-------------------------------------------------------------
 
 #include <iostream>
@@ -92,6 +92,9 @@ int main()
 	}
 	//------------------------------------------------------------------------------------
 
+	std::cout << "The enemys current location is at [" << enemy.coordinates.x << "," << enemy.coordinates.y << "]" << std::endl;
+
+
 	std::cout << "Now the launch co-ordinates" << std::endl << "enter the X Value" << std::endl;
 	std::cin >> launchCoordinate;
 	enemySlayer.target.coordinates.x = launchCoordinate;
@@ -114,7 +117,7 @@ int main()
 
 	if (enemySlayer.target.coordinates.x == enemy.coordinates.x && enemySlayer.target.coordinates.y == enemy.coordinates.y)
 	{
-		std::cout << "JACKPOT" << std::endl << "target obliterated" << std::endl;
+		std::cout << "JACKPOT" << std::endl << "target obliterated" << std::endl << "Press F to pay respects" << std::endl;
 	}
 	else
 	{
