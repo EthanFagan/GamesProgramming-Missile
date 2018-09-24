@@ -87,15 +87,15 @@ int main()
     }
 	else
 	{
-		std::cout << "\\ you did not choose an appropriate type, warhead has been set to explosive //" << std::endl;
+		std::cout << " \\ you did not choose an appropriate type, warhead has been set to explosive // " << std::endl;
 		enemySlayer.payload = EXPLOSIVE;
 	}
 	//------------------------------------------------------------------------------------
 
-	std::cout << "The enemys current location is at [" << enemy.coordinates.x << "," << enemy.coordinates.y << "]" << std::endl;
+	std::cout << "The enemys current location is between [" << enemy.coordinates.x << "," << enemy.coordinates.y << "]" << std::endl;
 
 
-	std::cout << "Now the launch co-ordinates" << std::endl << "enter the X Value" << std::endl;
+	std::cout << "Now enter the launch co-ordinates" << std::endl << "enter the X Value" << std::endl;
 	std::cin >> launchCoordinate;
 	enemySlayer.target.coordinates.x = launchCoordinate;
 	launchCoordinate = 0;
